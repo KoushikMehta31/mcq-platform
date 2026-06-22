@@ -47,5 +47,12 @@
     "email": "test@test.com",
     "password": "$2b$10$6LD4aAhLQtxXLkppd72/SeMj0zN6XKC/h1jdyfcliSS/DtYflAKKG",
     "createdAt": "2026-06-21T16:37:21.046Z"
+  },
+  {
+    "id": "7258cef6-8ed9-4bf2-9902-9d9db83e2396",
+    "name": "koushik mehta",
+    "email": "koushikmehta009@gmail.com",
+    "password": "$2b$10$cnSArrkzMM0GdI3k3UWbzeXrTZYvgCAHOjzE98TTkdVBPVZootp9y",
+    "createdAt": "2026-06-22T10:51:06.914Z"
   }
 ]
