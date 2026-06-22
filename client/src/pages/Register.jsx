@@ -20,8 +20,20 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
-    if (password.length < 6) {
-      const msg = 'Password must be at least 6 characters';
+    if (password.length < 8) {
+      const msg = 'Password must be at least 8 characters';
+      setError(msg);
+      toast.error(msg);
+      return;
+    }
+    if (!/[A-Z]/.test(password)) {
+      const msg = 'Password must contain an uppercase letter';
+      setError(msg);
+      toast.error(msg);
+      return;
+    }
+    if (!/[0-9]/.test(password)) {
+      const msg = 'Password must contain a number';
       setError(msg);
       toast.error(msg);
       return;
@@ -112,8 +124,8 @@ export default function Register() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full pl-10 pr-10 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-shadow text-sm"
-                  placeholder="At least 6 characters"
-                  minLength={6}
+                  placeholder="Min 8 chars, 1 uppercase, 1 number"
+                  minLength={8}
                   required
                   autoComplete="new-password"
                 />

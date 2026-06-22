@@ -43,6 +43,16 @@ function quizReducer(state, action) {
         quizStatus: isFinished ? 'finished' : 'active',
       };
     }
+    case 'RETAIN_CAREER_INFO':
+      return {
+        ...state,
+        currentIndex: 0,
+        answers: [],
+        score: 0,
+        feedback: null,
+        quizStatus: 'idle',
+        questions: [],
+      };
     case 'RESET':
       return initialState;
     default:

@@ -8,6 +8,7 @@ import TimerBar from '../components/quiz/TimerBar';
 import FeedbackOverlay from '../components/quiz/FeedbackOverlay';
 import Button from '../components/common/Button';
 import Card from '../components/common/Card';
+import LoadingSpinner from '../components/common/LoadingSpinner';
 import { ArrowRight, ChevronLeft, Keyboard } from 'lucide-react';
 
 export default function Quiz() {
@@ -17,13 +18,18 @@ export default function Quiz() {
   const [showFeedback, setShowFeedback] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const quizRef = useRef(null);
+  const navigatingRef = useRef(false);
 
   useEffect(() => {
-    if (state.quizStatus === 'idle' || !state.questions.length) {
-      navigate('/careers');
-    }
-    if (state.quizStatus === 'finished') {
+    if (state.quizStatus === 'finished' && !navigatingRef.current) {
+      navigatingRef.current = true;
       navigate('/result');
+    }
+  }, [state.quizStatus, navigate]);
+
+  useEffect(() => {
+    if ((state.quizStatus === 'idle' || !state.questions.length) && !navigatingRef.current) {
+      navigate('/careers');
     }
   }, [state.quizStatus, state.questions.length, navigate]);
 
@@ -38,7 +44,13 @@ export default function Quiz() {
   }, [dispatch]);
 
   const question = state.questions[state.currentIndex];
-  if (!question) return null;
+  if (state.quizStatus === 'finished' || !question) {
+    return (
+      <div className="max-w-2xl mx-auto flex items-center justify-center min-h-[50vh]">
+        <LoadingSpinner size="lg" />
+      </div>
+    );
+  }
 
   const handleSelect = (idx) => {
     if (selected !== null) return;
