@@ -1,0 +1,52 @@
+[
+  {
+    "id": "frontend",
+    "name": "Frontend Developer",
+    "icon": "🎨",
+    "description": "Build beautiful user interfaces with HTML, CSS, and JavaScript frameworks",
+    "hasSubCategories": true,
+    "subCategoryType": "skill",
+    "subCategoryLabel": "Choose a Skill"
+  },
+  {
+    "id": "backend",
+    "name": "Backend Developer",
+    "icon": "⚙️",
+    "description": "Build server-side logic, APIs, and database integrations",
+    "hasSubCategories": true,
+    "subCategoryType": "language",
+    "subCategoryLabel": "Choose a Language"
+  },
+  {
+    "id": "fullstack",
+    "name": "Full Stack Developer",
+    "icon": "🌐",
+    "description": "Master both frontend and backend technologies",
+    "hasSubCategories": true,
+    "subCategoryType": "stack",
+    "subCategoryLabel": "Choose a Stack"
+  },
+  {
+    "id": "core-subjects",
+    "name": "Core Computer Subjects",
+    "icon": "💻",
+    "description": "Master fundamental computer science concepts",
+    "hasSubCategories": true,
+    "subCategoryType": "topic",
+    "subCategoryLabel": "Choose a Subject"
+  },
+  {
+    "id": "data-analyst",
+    "name": "Data Analyst",
+    "icon": "📊",
+    "description": "Analyze data, create reports, and derive insights",
+    "hasSubCategories": false
+  },
+  {
+    "id": "ai-ml",
+    "name": "AI / ML Engineer",
+    "icon": "🤖",
+    "description": "Build intelligent systems with machine learning and AI",
+    "hasSubCategories": false
+  }
+]

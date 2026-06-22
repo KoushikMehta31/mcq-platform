@@ -1,0 +1,68 @@
+[
+  {
+    "id": "f42a2920-82be-4800-89a7-e52558043500",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": null,
+    "level": "beginner",
+    "score": 5,
+    "total": 10,
+    "percentage": 50,
+    "date": "2026-06-21T14:57:55.280Z"
+  },
+  {
+    "id": "3514007e-8f6d-4b5f-8330-1540810e735a",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": null,
+    "level": "beginner",
+    "score": 5,
+    "total": 10,
+    "percentage": 50,
+    "date": "2026-06-21T14:57:55.290Z"
+  },
+  {
+    "id": "9bbf19e3-9c84-4ee7-9fd5-868686159efb",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": "vue",
+    "level": "beginner",
+    "score": 3,
+    "total": 10,
+    "percentage": 30,
+    "date": "2026-06-21T17:10:17.914Z"
+  },
+  {
+    "id": "ba824a9b-723c-4788-bfd5-dec65f157565",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": "vue",
+    "level": "beginner",
+    "score": 3,
+    "total": 10,
+    "percentage": 30,
+    "date": "2026-06-21T17:10:17.923Z"
+  },
+  {
+    "id": "f68b1985-34f4-401d-8e26-190b763fa763",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": "html",
+    "level": "beginner",
+    "score": 5,
+    "total": 10,
+    "percentage": 50,
+    "date": "2026-06-21T17:23:02.300Z"
+  },
+  {
+    "id": "2d0c1c03-ba14-4aab-99a0-ef6ff48f2969",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": "html",
+    "level": "beginner",
+    "score": 5,
+    "total": 10,
+    "percentage": 50,
+    "date": "2026-06-21T17:23:02.400Z"
+  }
+]
