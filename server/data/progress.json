@@ -64,5 +64,27 @@
     "total": 10,
     "percentage": 50,
     "date": "2026-06-21T17:23:02.400Z"
+  },
+  {
+    "id": "f249227f-865e-4cdb-9a42-d82d6b60c5b3",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": "react",
+    "level": "beginner",
+    "score": 6,
+    "total": 10,
+    "percentage": 60,
+    "date": "2026-06-23T06:27:17.536Z"
+  },
+  {
+    "id": "d3749365-d020-4eae-999a-4b75512b2cf0",
+    "userId": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
+    "career": "frontend",
+    "language": "react",
+    "level": "beginner",
+    "score": 6,
+    "total": 10,
+    "percentage": 60,
+    "date": "2026-06-23T06:27:17.553Z"
   }
 ]

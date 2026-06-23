@@ -37,9 +37,6 @@ export default function Quiz() {
     });
   }, [dispatch]);
 
-  const question = state.questions[state.currentIndex];
-  if (!question) return null;
-
   const handleSelect = (idx) => {
     if (selected !== null) return;
     setSelected(idx);
@@ -72,6 +69,9 @@ export default function Quiz() {
   useEffect(() => {
     if (quizRef.current) quizRef.current.focus();
   }, [state.currentIndex]);
+
+  const question = state.questions[state.currentIndex];
+  if (!question) return null;
 
   return (
     <div className="max-w-2xl mx-auto space-y-6" ref={quizRef} tabIndex={-1}>
