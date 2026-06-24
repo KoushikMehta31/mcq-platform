@@ -54,5 +54,19 @@
     "email": "koushikmehta009@gmail.com",
     "password": "$2b$10$cnSArrkzMM0GdI3k3UWbzeXrTZYvgCAHOjzE98TTkdVBPVZootp9y",
     "createdAt": "2026-06-22T10:51:06.914Z"
+  },
+  {
+    "id": "08e58b52-1cbe-470c-8fdf-43293841a6ee",
+    "name": "Test",
+    "email": "test@example.com",
+    "password": "$2b$10$X.80i2tHQJtxHRmyWcLPjO/mejbmecpSe3s8N0qu7qelsHRRqErVe",
+    "createdAt": "2026-06-24T07:48:24.006Z"
+  },
+  {
+    "id": "d7eabe89-78d1-4e57-b8f7-7ad17f5f6aed",
+    "name": "TestUser",
+    "email": "testuser@example.com",
+    "password": "$2b$10$I42WSpXW5Lj8i2XtX94NQOvL2etaCnvJNJwP9kV/cltYBr3G.E2u.",
+    "createdAt": "2026-06-24T07:51:50.872Z"
   }
 ]

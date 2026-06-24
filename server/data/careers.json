@@ -32,6 +32,7 @@
     "icon": "💻",
     "description": "Master fundamental computer science concepts",
     "hasSubCategories": true,
+    "singleLevel": true,
     "subCategoryType": "topic",
     "subCategoryLabel": "Choose a Subject"
   },

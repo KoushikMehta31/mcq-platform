@@ -132,7 +132,7 @@ export default function Home() {
         >
           <div className="grid grid-cols-3 gap-4">
             {[
-              { value: '500+', label: 'Questions', icon: FileQuestion, color: 'text-brand-600', bg: 'bg-brand-50' },
+              { value: '30k+', label: 'Questions', icon: FileQuestion, color: 'text-brand-600', bg: 'bg-brand-50' },
               { value: '6', label: 'Domains', icon: Globe, color: 'text-emerald-600', bg: 'bg-emerald-50' },
               { value: '3', label: 'Levels', icon: Gauge, color: 'text-amber-600', bg: 'bg-amber-50' },
             ].map((stat, si) => {

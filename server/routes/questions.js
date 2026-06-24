@@ -51,13 +51,38 @@ router.get('/subcategories', (req, res) => {
   const careerMeta = careers.find(c => c.id === career);
   const subCategoryType = careerMeta ? careerMeta.subCategoryType : null;
 
-  const acronyms = ['html', 'css', 'js', 'sql', 'dsa', 'mern', 'mean', 'mevn'];
+  const acronyms = ['html', 'css', 'js', 'sql', 'dsa', 'mern', 'mean', 'mevn', 'os', 'ds', 'coa', 'dbms', 'algo', 'se'];
+
+  const displayNames = {
+    javascript: 'JavaScript',
+    typescript: 'TypeScript',
+    reactjs: 'React.js',
+    nextjs: 'Next.js',
+    nodejs: 'Node.js',
+    python: 'Python',
+    php: 'PHP',
+    csharp: 'C#',
+    go: 'Go',
+    mern: 'MERN Stack',
+    mean: 'MEAN Stack',
+    mevn: 'MEVN Stack',
+    jamstack: 'JAMstack',
+    dbms: 'DBMS',
+    os: 'Operating Systems',
+    networking: 'Computer Networks',
+    oops: 'OOPs',
+    ds: 'Data Structures',
+    algo: 'Algorithms',
+    se: 'Software Engineering',
+    coa: 'CO & Architecture',
+  };
 
   const subCategories = Object.entries(cats).map(([id, data]) => ({
     id,
-    name: id.split('-').map(w => acronyms.includes(w) ? w.toUpperCase() : w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+    name: displayNames[id] || id.split('-').map(w => acronyms.includes(w) ? w.toUpperCase() : w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
     levels: Object.keys(data),
     subCategoryType,
+    singleLevel: careerMeta ? careerMeta.singleLevel : false,
   }));
 
   res.json(subCategories);

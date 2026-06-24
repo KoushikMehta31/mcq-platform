@@ -6,6 +6,7 @@ import Card from '../components/common/Card';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import { motion } from 'framer-motion';
 import { Wrench, Type, Puzzle, BookOpen, Hash, ArrowRight } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const typeIcons = {
   skill: Wrench,
@@ -41,9 +42,20 @@ export default function SubCategorySelection() {
       .finally(() => setLoading(false));
   }, [careerParam, navigate]);
 
-  const handleSelect = (sub) => {
+  const handleSelect = async (sub) => {
     dispatch({ type: 'SET_SUBCATEGORY', payload: sub.id });
-    navigate('/levels');
+    if (sub.singleLevel) {
+      dispatch({ type: 'SET_LEVEL', payload: 'all' });
+      try {
+        const res = await api.get('/questions', { params: { career: careerParam, level: 'all', subcategory: sub.id } });
+        dispatch({ type: 'SET_QUESTIONS', payload: res.data });
+        navigate('/quiz');
+      } catch {
+        toast.error('Failed to load questions');
+      }
+    } else {
+      navigate('/levels');
+    }
   };
 
   if (loading) return <LoadingSpinner size="lg" className="mt-20" />;

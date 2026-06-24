@@ -1,0 +1,2 @@
+Server error: listen EADDRINUSE: address already in use :::5000
+Port 5000 is already in use. Close the other process or use a different port.
