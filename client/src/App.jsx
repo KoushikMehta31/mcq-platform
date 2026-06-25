@@ -7,6 +7,8 @@ import Layout from './components/layout/Layout';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import ForgotPassword from './pages/ForgotPassword';
+import ResetPassword from './pages/ResetPassword';
 import CareerSelection from './pages/CareerSelection';
 import SubCategorySelection from './pages/SubCategorySelection';
 import LevelSelection from './pages/LevelSelection';
@@ -29,6 +31,8 @@ function AnimatedRoutes() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/forgot-password" element={<ForgotPassword />} />
+          <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/careers" element={<ProtectedRoute><CareerSelection /></ProtectedRoute>} />
           <Route path="/subcategories" element={<ProtectedRoute><SubCategorySelection /></ProtectedRoute>} />
           <Route path="/levels" element={<ProtectedRoute><LevelSelection /></ProtectedRoute>} />
