@@ -1,5 +1,8 @@
 {
   "name": "mcq-platform",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "build": "cd client && npm install && npm run build",
     "start": "cd server && node index.js"
