@@ -10,10 +10,8 @@
     "id": "070e7172-f06f-47d7-9b9c-c4c43f0d0cca",
     "name": "Koushik Mehta",
     "email": "koushikmehta07@gmail.com",
-    "password": "$2b$10$EzT61KWM37E.62kMduvJQuV1ssLPVDQMIvJ1ZSHakNpbx2/ZGeIte",
-    "createdAt": "2026-06-21T14:55:41.487Z",
-    "resetTokenHash": "de2c95c615837f8cb68220da2f5ab2f49f19063991ac0f684fbf8d294b79cca0",
-    "resetTokenExpiry": 1782404989083
+    "password": "$2b$10$Gs3orcvJ1ZiHhFIGUVpGs.i6NZRp9nTUdm3I22Qov1JoLVlgst8RG",
+    "createdAt": "2026-06-21T14:55:41.487Z"
   },
   {
     "id": "00b12f17-ba8a-4947-bfcb-8078ed912fa7",
