@@ -1,6 +1,5 @@
 import { Trophy, Star, TrendingUp } from 'lucide-react';
 import Badge from '../common/Badge';
-import Badge2 from '../common/Badge';
 
 const gradeConfig = {
   excellent: { label: 'Excellent', icon: Trophy, color: 'emerald', desc: 'Outstanding performance!' },
@@ -32,9 +31,9 @@ export default function ScoreCard({ score, total, career, language, level }) {
       </div>
 
       <div className="flex flex-wrap justify-center gap-2 text-sm text-gray-500">
-        <Badge2 color="indigo">{career}</Badge2>
-        {language && <Badge2 color="purple">{language}</Badge2>}
-        <Badge2 color={level === 'beginner' ? 'emerald' : level === 'intermediate' ? 'amber' : 'red'}>{level}</Badge2>
+        <Badge color="indigo">{career}</Badge>
+        {language && <Badge color="purple">{language}</Badge>}
+        <Badge color={level === 'beginner' ? 'emerald' : level === 'intermediate' ? 'amber' : 'red'}>{level}</Badge>
       </div>
     </div>
   );

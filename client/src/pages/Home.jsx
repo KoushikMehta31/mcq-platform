@@ -28,8 +28,6 @@ const featureColors = [
   { icon: Trophy, circle: 'bg-pink-100 text-pink-600 group-hover:bg-pink-200', accent: 'pink' },
 ];
 
-const statIcons = [FileQuestion, Globe, Gauge];
-
 export default function Home() {
   const { user } = useAuth();
   const [iconAnimations] = useState(() =>
