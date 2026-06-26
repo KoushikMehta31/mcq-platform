@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const fs = require('fs');
 const authRoutes = require('./routes/auth');
 const questionsRoutes = require('./routes/questions');
 const progressRoutes = require('./routes/progress');
@@ -21,10 +22,11 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
-  app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
+const distPath = path.join(__dirname, '../client/dist');
+if (fs.existsSync(distPath)) {
+  app.use(express.static(distPath));
+  app.get('/{*path}', (req, res) => {
+    res.sendFile(path.join(distPath, 'index.html'));
   });
 }
 
