@@ -11,7 +11,9 @@
     "name": "Koushik Mehta",
     "email": "koushikmehta07@gmail.com",
     "password": "$2b$10$Gs3orcvJ1ZiHhFIGUVpGs.i6NZRp9nTUdm3I22Qov1JoLVlgst8RG",
-    "createdAt": "2026-06-21T14:55:41.487Z"
+    "createdAt": "2026-06-21T14:55:41.487Z",
+    "resetTokenHash": "b75f391cc12d1a4bbc9da8388d7c0052d191d280348ec3a3551e811c09f98f9b",
+    "resetTokenExpiry": 1782562198316
   },
   {
     "id": "00b12f17-ba8a-4947-bfcb-8078ed912fa7",
